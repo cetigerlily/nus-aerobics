@@ -4,7 +4,7 @@ const cors = require("cors");
 const app = express();
 
 var corsOptions = {
-  origin: "http://localhost:8081"
+  origin: "http://localhost:8081"  // TODO: Is this supposed to be 8080 or 8081?
 };
 
 app.use(cors(corsOptions));
@@ -21,6 +21,8 @@ db.sequelize.sync();
 app.get("/", (req, res) => {
   res.json({ message: "Hello world." });
 });
+
+require("./app/routes/class.routes")(app);
 
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {

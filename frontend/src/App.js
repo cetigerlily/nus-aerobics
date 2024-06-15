@@ -16,9 +16,11 @@ import {
   Td,
   TableContainer,
 } from "@chakra-ui/react";
+import React, { Component } from "react";
 
-function App() {
-  return (
+class App extends Component {
+  render() {
+    return (
     <ChakraProvider>
       <div className="h-screen w-screen flex flex-row">
         {/* <header className="App-header">
@@ -112,7 +114,8 @@ function App() {
         </div>
       </div>
     </ChakraProvider>
-  );
+    );
+  };
 }
 
 export default App;

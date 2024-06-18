@@ -1,6 +1,5 @@
 const db = require("../models");
 const Class = db.classes;
-const Op = db.Sequelize.Op;
 
 exports.create = (req, res) => {
   const title = req.body.title;
@@ -38,4 +37,3 @@ exports.findOne = (req, res) => {
       res.status(500).send({ message: err.message || `Error occurred while retrieving class with ID: ${id}.`})
     })
 };
-

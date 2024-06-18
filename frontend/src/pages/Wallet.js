@@ -20,15 +20,12 @@ const Wallet = () => {
       <NavBar />
       <div className="h-screen w-3/4 flex flex-col p-10 bg-[#FCF0F250] gap-y-5">
         <p>Wallet</p>
-        <div className="h-1/4 flex flex-row rounded-[20px] border border-[#393E4610] p-5 bg-white gap-x-2.5">
-          <div className="w-1/3 border-r border-[#393E4610] px-2.5">
+        <div className="h-1/4 flex flex-row gap-x-5">
+          <div className="w-1/2 rounded-[20px] border border-[#393E4610] p-5 bg-white">
             <p>10 credits remaining</p>
           </div>
-          <div className="w-1/3 border-r border-[#393E4610] px-2.5">
+          <div className="w-1/2 rounded-[20px] border border-[#393E4610] p-5 bg-white">
             <p>8 credits spent</p>
-          </div>
-          <div className="w-1/3 px-2.5">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
         </div>
         <div className="h-3/4 flex flex-col rounded-[20px] border border-[#393E4610] p-5 bg-white gap-y-2.5">

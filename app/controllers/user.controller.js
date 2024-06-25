@@ -22,10 +22,10 @@ exports.create = (req, res) => {
     email: email,
     balance: 0,
   })
-    .then((res) => {
-      console.log(res);
+    .then((data) => {
+      res.send(data);
     })
     .catch((err) => {
-      console.log(err);
+      res.send(500).send({ message: err.message || "Error occurred while creating user." });
     });
 };

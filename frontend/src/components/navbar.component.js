@@ -1,7 +1,6 @@
 import { Icon } from "@chakra-ui/react";
 import {
   MdClass,
-  MdEventAvailable,
   MdGridView,
   MdPerson,
   MdWallet,
@@ -19,10 +18,6 @@ const NavBar = () => {
       <div className="flex flex-row items-center gap-x-2.5">
         <Icon as={MdClass} />
         <Link to="/classes">Classes</Link>
-      </div>
-      <div className="flex flex-row items-center gap-x-2.5">
-        <Icon as={MdEventAvailable} />
-        <Link to="/bookings">Bookings</Link>
       </div>
       <div className="flex flex-row items-center gap-x-2.5">
         <Icon as={MdWallet} />
